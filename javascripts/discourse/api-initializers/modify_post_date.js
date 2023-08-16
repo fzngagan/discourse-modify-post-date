@@ -6,7 +6,6 @@ export default apiInitializer("0.11.1", api => {
     html(attrs) {
       let test =  this._super(attrs);
       let date = attrs.wiki && attrs.lastWikiEdit ? new Date(attrs.lastWikiEdit) : new Date(attrs.created_at);
-      console.log(object);
       test.attrs.rawLabel = longDate(date);
       return test;
     }
